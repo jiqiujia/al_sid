@@ -1,0 +1,44 @@
+{
+  "model_type": "qwen2_5",
+  "load_checkpoint_from": "/apdcephfs_sw/share_1546755/qiujiaji/gr/al_sid/algr/logs/qwen2.5_05b_3layer_s1/checkpoint-125000",
+  "dataset_name": "csv",
+  "data_file": "/apdcephfs_sw/share_1546755/qiujiaji/gr/al_sid/data/AL-GR-v1/test_data/s1_test.csv",
+  "custom_args": {
+    "instruction_column": "system",
+    "input_column": "user",
+    "output_column": "answer",
+    "max_length": 1544,
+    "max_source_length": 1480,
+    "max_target_length": 64
+  },
+  "predict_output": {
+    "type": "local",
+    "mode": "overwrite",
+    "log_interval": 100,
+    "columns": [
+      "answer",
+      "_generated_new_text_",
+      "user",
+      "input_ids"
+    ],
+    "skip_special_tokens": true
+  },
+  "training_args": {
+    "do_predict": true,
+    "per_device_eval_batch_size": 1,
+    "bf16": true,
+    "predict_with_generate": true,
+    "ddp_timeout": 86400,
+    "torch_empty_cache_steps": 100,
+    "remove_unused_columns": false,
+    "generation_config": {
+      "max_new_tokens": 3,
+      "num_beams": 100,
+      "num_return_sequences": 100,
+      "do_sample": false,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null
+    }
+  }
+}

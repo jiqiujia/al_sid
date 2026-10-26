@@ -2,7 +2,7 @@
   "model_type": "qwen2_5",
   "load_checkpoint_from": "Qwen/Qwen2.5-0.5B-Instruct",
   "dataset_name":"AL-GR/AL-GR-Tiny",
-  "data_file":"/home/admin/workspace/aop_lab/data/AL-GR-Tiny/train_data/s1_tiny.csv",
+  "data_file":"/root/.cache/huggingface/hub/datasets--AL-GR--AL-GR-Tiny/snapshots/c160ac2d13b2534ea0341291f26f34f24d84e71e/train_data/s1_tiny.csv",
   "streaming": true,
   "custom_args": {
     "instruction_column": "system",

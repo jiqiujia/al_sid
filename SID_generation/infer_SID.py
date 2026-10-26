@@ -18,10 +18,10 @@ EXPECTED_EMBEDDING_DIM = 512
 CHUNK_SIZE = 5000  # pandas每次读取的行数
 BATCH_SIZE = 128  # 模型批次推理的样本数
 
-INPUT_EMBEDDING_COL = 'TODO'  # 输入文件中embedding列的名称，例如"feature"
-INPUT_ID_COL = 'TODO'  # 输入文件中ID列的名称，例如"base62_string"
+INPUT_EMBEDDING_COL = 'feature'  # 输入文件中embedding列的名称
+INPUT_ID_COL = 'base62_string'  # 输入文件中ID列的名称
 CKPT_PATH = 'output_model/checkpoint-7.pth'  # todo: 需要推理的ckpt
-INPUT_FILE_PATH = './item_feature/final/part_01.csv'  # todo: 输入的emb，可从https://huggingface.co/datasets/AL-GR/Item-EMB获取
+INPUT_FILE_PATH = './item_feature/final_feature/part_1.csv'  # 输入的emb，可从https://huggingface.co/datasets/AL-GR/Item-EMB获取
 OUTPUT_FILE_PATH = 'inference_results_batch.csv'  # todo: 输出结果
 
 

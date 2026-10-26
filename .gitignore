@@ -221,3 +221,9 @@ __marimo__/
 
 ckpts/
 */data/sid2item_*
+
+# 大规模数据文件：未跟踪时 htalk 的 repos.list 会逐个读入全文数行数（会吃光内存）。
+# 这里只忽略数据文件本身，保留同目录下的 README/.gitattributes 等元数据。
+data/**/*.csv
+algr/item_info/*.csv
+SID_generation/item_feature/final_feature/*.csv

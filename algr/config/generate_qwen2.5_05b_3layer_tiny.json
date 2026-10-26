@@ -1,8 +1,8 @@
 {
     "model_type": "qwen2_5",
-    "load_checkpoint_from": "./logs/qwen2_5_05b_3layer_tiny",
+    "load_checkpoint_from": "/apdcephfs_sw/share_1546755/qiujiaji/gr/al_sid/algr/logs/qwen2.5_05b_3layer_s1/checkpoint-125000",
     "dataset_name":"AL-GR/AL-GR-Tiny",
-    "data_file":"/home/admin/.cache/huggingface/modules/datasets_modules/datasets/AL-GR--AL-GR-Tiny/25dea07242891a2d/test_data/s1_tiny_test.csv",
+    "data_file":"/root/.cache/huggingface/hub/datasets--AL-GR--AL-GR-Tiny/snapshots/c160ac2d13b2534ea0341291f26f34f24d84e71e/test_data/s1_tiny_test.csv",
     "custom_args": {
       "instruction_column": "system",
       "input_column": "user",

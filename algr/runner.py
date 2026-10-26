@@ -218,7 +218,7 @@ class Runner:
         
         ## Execute training and testing according to the configuration file
         if self.training_args.do_train:
-            self.trainer.train()
+            self.trainer.train(resume_from_checkpoint=self.training_args.resume_from_checkpoint)
         elif self.training_args.do_predict:
             params = {"test_dataset": self.test_dataset}
             if self.gen_kwargs is not None:
