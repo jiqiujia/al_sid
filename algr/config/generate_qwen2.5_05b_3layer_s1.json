@@ -7,9 +7,9 @@
     "instruction_column": "system",
     "input_column": "user",
     "output_column": "answer",
-    "max_length": 1544,
-    "max_source_length": 1480,
-    "max_target_length": 64
+    "max_length": 1056,
+    "max_source_length": 1024,
+    "max_target_length": 32
   },
   "predict_output": {
     "type": "local",
